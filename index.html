@@ -1,5 +1,39 @@
-
 <!DOCTYPE html>
-<html>
-<head></head>
-<body><img src="dewey_3.png" alt="dewey image"></body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinning Wheel</title>
+  <audio id="spin-sound" src="https://gitupwithit.github.io/spinner_wheel/167419__kasa90__chiptune-loop.mp3" loop></audio>
+<audio id="success-sound" src="https://gitupwithit.github.io/spinner_wheel/Stinger_Success2a.mp3"></audio>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  
+<script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+
+  <div class="numbers-circle" id="numbers-circle">
+  <div class="spinner-container">
+      <img id="dewey" class="dewey" src="https://gitupwithit.github.io/spinner_wheel/dewey_3.png" alt="TPL Mascot Dewey">
+    </div>
+    </div>
+<!--     <div class="div-space"></div> -->
+     <div class="number-choice-container">
+      <label for="number-choice-box" id="number-choice" class="number-choice">How Many Numbers?</label>
+      <input type="number" id="number-choice-box" class="number-choice-box" name="number-choice">
+
+       <button type="submit" id="number-choice-button" type="submit">Okay!</button>
+        </div>
+    </div>
+  
+  <div id="result-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="result-text"></p>
+  </div>
+</div>
+
+
+</body>
+</html>
