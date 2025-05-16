@@ -1,6 +1,7 @@
-let numberSubmitButton = document.getElementById('number-choice-button');
+
 
 document.addEventListener('DOMContentLoaded', function() {
+  let numberSubmitButton = document.getElementById('number-choice-button');
   const spinSound = document.getElementById('spin-sound');
   const successSound = document.getElementById('success-sound');
   let accumulatedRotation = 0; // Initialize accumulated rotation
