@@ -95,10 +95,7 @@ function showModal(finalNumber, numberSelected) {
     finalNumber = " .. 1! Because of course I did!"
   } 
   if (finalNumber == 2) {
-    finalNumber = " .. finalNumber! Just flip a coin next time!"
-  } 
-  if (finalNumber == 2) {
-    finalNumber = " .. finalNumber! Just flip a coin next time!"
+    finalNumber = " .. 2! Just flip a coin next time!"
   } 
   document.getElementById('result-text').innerText = "I got " + finalNumber + "!";
   const modal = document.getElementById('result-modal');
