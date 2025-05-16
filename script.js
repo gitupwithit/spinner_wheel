@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         successSound.play();
         let finalNumber = getHighlightedNumber(); // Get the number highlighted
         console.log("finalNumber:",finalNumber)
-        showModal(finalNumber, chosenNumber); // Show result modal with the final number
+        showModal(finalNumber, numberSelected); // Show result modal with the final number
       }
     });
   }
