@@ -89,7 +89,7 @@ function highlightCurrentNumber(currentAngle, numberSelected) {
 function showModal(finalNumber, numberSelected) {
   // determine number from highlighted number 
   if (finalNumber == null) {
-    finalNumber = " .. nothing! Please pick a number"
+    finalNumber = " .. nothing! Please pick a number and press 'Okay!'"
   }
   if (finalNumber == 1) {
     finalNumber = " .. 1! Because of course I did!"
