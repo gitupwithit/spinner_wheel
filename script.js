@@ -1,9 +1,17 @@
 
-
 document.addEventListener('DOMContentLoaded', function() {
-  let numberSubmitButton = document.getElementById('number-choice-button');
   const spinSound = document.getElementById('spin-sound');
   const successSound = document.getElementById('success-sound');
+  const numberSubmitButton = document.getElementById('number-choice-button');
+  
+  numberSubmitButton.addEventListener('click', () => {
+    console.log("click") 
+    const numberSelected = document.querySelector('#number-choice-box').value.trim();
+    // console.log("number chosen:", numberSelected)
+    populateNumbers(numberSelected)
+    populateCSS(numberSelected)
+  })
+  
   let accumulatedRotation = 0; // Initialize accumulated rotation
 
   function spin() {
@@ -113,14 +121,6 @@ document.querySelector('.close').addEventListener('click', function() {
     document.getElementById('result-modal').style.display = "none";
   });
 });
-
-numberSubmitButton.addEventListener('click', () => {
-  console.log("click") 
-  const numberSelected = document.querySelector('#number-choice-box').value.trim();
-  // console.log("number chosen:", numberSelected)
-  populateNumbers(numberSelected)
-  populateCSS(numberSelected)
-})
 
 function populateNumbers(numberSelected) {
   const numbersCircle = document.getElementById('numbers-circle');
