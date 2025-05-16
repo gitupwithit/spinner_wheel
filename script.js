@@ -1,4 +1,4 @@
-let numberSubmitButton = document.getElementById('number-submit-button');
+let numberSubmitButton = document.getElementById('number-choice-button');
 
 document.addEventListener('DOMContentLoaded', function() {
   const spinSound = document.getElementById('spin-sound');
