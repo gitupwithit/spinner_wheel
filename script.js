@@ -72,8 +72,8 @@ function getHighlightedNumber() {
   return null;
 }
 
-function highlightCurrentNumber(currentAngle, chosenNumber) {
-  const divisor = 360 / chosenNumber;
+function highlightCurrentNumber(currentAngle, numberSelected) {
+  const divisor = 360 / numberSelected;
   const index = Math.floor(((currentAngle)) / divisor) + 1;
   // console.log("currentAngle:",currentAngle,"index:",index);
   resetNumberColors();
@@ -86,7 +86,7 @@ function highlightCurrentNumber(currentAngle, chosenNumber) {
   }
 }
 
-function showModal(finalNumber, chosenNumber) {
+function showModal(finalNumber, numberSelected) {
   // determine number from highlighted number 
   if (finalNumber == null) {
     finalNumber = " .. nothing! Please pick a number"
