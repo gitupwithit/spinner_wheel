@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     populateNumbers(numberSelected)
     populateCSS(numberSelected)
   })
+
+  document.addEventListener('keydown', function(event) {
+    if (event.code === 'Space') {
+      spin();
+      console.log("space")
+    }
+  });
   
   let accumulatedRotation = 0; // Initialize accumulated rotation
 
@@ -115,13 +122,6 @@ document.getElementById('dewey').addEventListener('click', spin);
 document.querySelector('.close').addEventListener('click', function() {
     document.getElementById('result-modal').style.display = "none";
   });
-});
-
-document.addEventListener('keydown', function(event) {
-  if (event.code === 'Space') {
-    spin();
-    console.log("space")
-  }
 });
 
 function populateNumbers(numberSelected) {
