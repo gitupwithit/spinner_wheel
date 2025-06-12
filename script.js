@@ -120,7 +120,7 @@ document.querySelector('.close').addEventListener('click', function() {
 document.addEventListener('keydown', function(event) {
   if (event.code === 'Space') {
     spin();
-    // Add your code here
+    console.log("space")
   }
 });
 
