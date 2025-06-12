@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
   document.addEventListener('keydown', function(event) {
+    console.log("key")
     if (event.code === 'Space') {
       spin();
       console.log("space")
